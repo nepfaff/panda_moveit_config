@@ -1,0 +1,10 @@
+<launch>
+    <!-- Run the main MoveIt executable without trajectory execution (we do not have controllers configured by default) -->
+  <include file="$(find panda_moveit_config)/launch/move_group.launch">
+  </include>
+
+  <!-- Run Rviz -->
+  <include file="$(find panda_moveit_config)/launch/moveit_rviz.launch">
+  </include>
+
+</launch>
